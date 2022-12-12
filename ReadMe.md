@@ -1,7 +1,7 @@
 # Comparing Q-Learning and Sarsa for Mini-Grid Agent Training
 
 This project utilises the Gym-Minigrid environment to train and test agents using the Q-Learning and Sarsa algorithms. The training script is setup to allow for doing a grid-search across the alpha and gamma hyper-parameters. 
-For a deeper understanding of the problem statement, approach and results - refer to accompanying report pdf at `report/MLAI_RL_Gridworld_Report.pdf`.
+
 ## Directory Structure
 
 ```
