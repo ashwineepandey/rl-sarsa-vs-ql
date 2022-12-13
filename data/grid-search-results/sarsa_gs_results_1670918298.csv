@@ -1,0 +1,2 @@
+,alpha,gamma,min_epsilon,max_epsilon,epsilon_decay_rate,avg_reward,completion_rate,avg_steps
+sarsa_agent_1670918298,0.2,0.8,0.05,0.99,0.999,0.8599734805045871,0.981,38.82976554536187

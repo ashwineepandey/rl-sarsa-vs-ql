@@ -12,8 +12,8 @@ grid_search:
   max_epsilon: 0.99
   min_epsilon: 0.05
   epsilon_decay_rate: 0.999
-  alpha_range: [ 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9 ] # [0.2]
-  gamma_range: [ 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9 ] # [0.8]
+  alpha_range:  [0.2] # [ 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9 ]
+  gamma_range: [0.8]  # [ 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9 ]
 
 predict:
   episodes: 1000
@@ -21,4 +21,4 @@ predict:
   best_agent_filename: "../data/model-file/ql_agent_1658938966.pickle"
   best_ql_agent_filename: "../data/model-file/ql_agent_1658938966.pickle"
   best_sarsa_agent_filename: "../data/model-file/sarsa_agent_1658940148.pickle"
-  render: False
+  render: True
