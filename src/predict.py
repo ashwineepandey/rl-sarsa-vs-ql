@@ -112,7 +112,6 @@ def predict(config, q, render=False) -> (Dict[str, Union[float, List]], List[flo
               'avg_steps': np.sum(step_tracker) / len(step_tracker)}
     logger.info(f"Final output for agent: {result}")
     plot_reward(config, rewards)
-    return result, rewards, step_tracker
 
 
 @timer
@@ -120,7 +119,7 @@ def predict(config, q, render=False) -> (Dict[str, Union[float, List]], List[flo
 def main(config_path: str, args) -> None:
     config = read_yaml(config_path)
     q = load_agent(config, args.algo)
-    result, rewards, step_tracker = predict(config, q)
+    predict(config, q, config['predict']['render'])
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
